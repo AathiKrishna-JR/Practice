@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component , EventEmitter, Input, Output } from '@angular/core';
 import { w7 } from './w7';
 
 @Component ({
@@ -8,6 +8,15 @@ import { w7 } from './w7';
     styleUrl : './place.component.css',
 })
 export class PlaceComponent {
-  
-    selectedplace = w7[0]
+    places:string[] =[];
+    @Input({required : true }) place !: string ;
+    @Input({required : true }) location !: string ;
+
+    @Output() loc = new EventEmitter<string>();
+
+    onSelectPlace()
+    {
+         
+         this.loc.emit(this.location);
+    }
 }
