@@ -11,12 +11,12 @@ templateUrl: './app.component.html',
 styleUrl: './app.component.css',
 })
 export class AppComponent {
-    temploc !: string 
     places = w7;
-    send(lfun:string)
+    message : string = ' ';
+
+    send(childMessage : string )
     {
-            this.temploc = lfun;
-            console.log(lfun);
-            
+        this.message = childMessage;
     }
+    
 }

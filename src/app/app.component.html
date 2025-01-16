@@ -1,8 +1,7 @@
  <app-hello-world />
 
- <p>{{places[1].location}}</p>
  <ul id = "p7">
     <li> <app-place [place] ="places[0].name" [location] = "places[0].location"  (loc) = "send($event)"/> </li>
-    <li> <app-place [place] ="places[1].name" [location] = "places[1].location"/> </li>
+    <li> <app-place [place] ="places[1].name" [location] = "places[1].location"   (loc) = "send($event)" /> </li>
  </ul>
-    
+ <p>Message from Child: {{ message }}</p>
