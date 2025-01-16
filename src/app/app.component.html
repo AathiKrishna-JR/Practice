@@ -9,4 +9,4 @@
     <li> <app-place [place] ="places[5].name" [location] = "places[5].location"   (loc) = "send($event)" /> </li>
     <li> <app-place [place] ="places[6].name" [location] = "places[6].location"  (loc) = "send($event)"/> </li>
 </ul>
- <p>Message from Child: {{ message }}</p>
+<app-details [location] = "message"/>
