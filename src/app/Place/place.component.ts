@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { w7 } from './w7';
 
 @Component ({
     selector: 'app-place',
@@ -6,4 +7,7 @@ import { Component } from '@angular/core';
     templateUrl:'./place.component.html',
     styleUrl : './place.component.css',
 })
-export class PlaceComponent {}
+export class PlaceComponent {
+  
+    selectedplace = w7[0]
+}
