@@ -4,11 +4,12 @@ import { PlaceComponent } from './Place/place.component';
 import { DetailComponent } from './Details/details.component';
 import { w7 } from './Place/w7';
 import { CardComponent } from './Card/card.component';
+import { FormsModule } from '@angular/forms';
 
 @Component({
 selector: 'app-root',
 standalone: true,
-imports : [ HelloWorldComponent,PlaceComponent,DetailComponent,CardComponent],
+imports : [ HelloWorldComponent,PlaceComponent,DetailComponent,CardComponent,FormsModule],
 templateUrl: './app.component.html',
 styleUrl: './app.component.css',
 })
