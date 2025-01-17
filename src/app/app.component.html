@@ -1,3 +1,18 @@
+<app-hello-world />
+
+<ul id = "p7">
+@for (place of places ; track place.id){
+<li> <app-place [place] ="place.name" [location] = "place.location" (loc) = "send($event)"/> </li>
+<br>
+}
+</ul>
+@if (message == "Nil") 
+{
+<app-details [location] = "Nmessage"/>
+}
+@else{
+<app-details [location] = "message"/>
+}
 <div class = "container">
 <app-card/> 
 </div>

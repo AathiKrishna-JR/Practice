@@ -8,7 +8,9 @@
   background-color: #fcf5f5;
   }
   
-  
+  html{
+    background-color: black;
+  }
   
   h2 {
     color: black;
