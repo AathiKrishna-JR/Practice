@@ -41,4 +41,10 @@ export const w7 = [
       location: 'India',
       image: 'https://images.unsplash.com/photo-1583875762483-3b9ac31c3f50', // Image by Jovyn Chamb on Unsplash
     },
+    {
+      id: 'w8',
+      name: 'Others',
+      location: 'Nil',
+      image: 'https://images.unsplash.com/photo-1583875762483-3b9ac31c3f50', // Image by Jovyn Chamb on Unsplash
+    },
   ];
